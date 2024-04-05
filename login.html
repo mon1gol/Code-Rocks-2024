@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Вход</h1>
+    <form id="main-form" method="post" onsubmit="return loginCheckForm()">
+        <label for="name">Имя:</label>
+        <input type="text" name="name" placeholder="Имя" id="name"><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" name="pass" placeholder="Пароль" id="pass"><br><br>
+        <div id="error" style="color: red;"></div>
+        <input type="submit" onclick="" name="submit" value="Готово">
+    </form>
+    <script src="auth.js"></script>
+</body>
+</html>
