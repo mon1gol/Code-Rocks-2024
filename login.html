@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
     <h1>Вход</h1>
-    <form id="main-form" method="post" onsubmit="return loginCheckForm()">
+    <form id="main-form" method="post" onsubmit="return loginCheckForm(this)">
         <label for="name">Имя:</label>
         <input type="text" name="name" placeholder="Имя" id="name"><br><br>
         <label for="password">Пароль:</label>
