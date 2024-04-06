@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/auth.css">
+    <link rel="stylesheet" href="/styles/reg.css">
     <title>Reg</title>
 </head>
 <body>
-    <h1>Регистрация</h1>
     <form id="main-form" method="post" onsubmit="return regCheckForm(this)">
+        <h1>Регистрация</h1>
         <label for="name">Имя:</label>
         <input type="text" name="name" placeholder="Имя" id="name"><br><br>
         <label for="email">Почта:</label>
@@ -17,8 +17,12 @@
         <input type="password" name="pass" placeholder="Пароль" id="pass"><br><br>
         <label for="repass">Проверка пароля:</label>
         <input type="password" name="repass" placeholder="Проверка пароля" id="repass"><br><br>
+        <input type="radio" name="radio-button" id="buyer" value="Buyer">
+        <label for="buyer-radio-button">Покупатель</label>
+        <input type="radio" name="radio-button" id="company" value="Company">
+        <label for="company-radio-button">Компания</label><br><br>
         <div id="error" style="color: red;"></div>
-        <input type="submit" onclick="" name="submit" value="Готово">
+        <input type="submit" onclick="" name="submit" value="Зарегестрироваться">
     </form>
     <script src="/js/auth.js"></script>
 </body>
