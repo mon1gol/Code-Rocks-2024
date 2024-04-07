@@ -10,7 +10,8 @@
         <label for="Name">Название товара:</label>
         <input type="text" name="Name" placeholder="Название" id="name"><br><br>
         <label for="Picture">Изображение:</label>
-        <input type="image" name="Picture" placeholder="Изображение" id="picture"><br><br>
+        <input type="file" name="Picture" placeholder="Изображение" id="picture"><br><br>
+        <img src="" id="preview" style="display: none;">
         <label for="Price">Цена:</label>
         <input type="text" name="Price" placeholder="Цена" id="price"><br><br>
         <label for="Size">Размер:</label>
@@ -22,5 +23,6 @@
         <div id="error" style="color: red;"></div>
         <input type="submit" name="create-product-button" value="Создать изделие">
     </form>
+<script src="/js/createProduct.js"></script>
 </body>
 </html>

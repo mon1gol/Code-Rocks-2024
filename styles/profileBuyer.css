@@ -14,7 +14,7 @@ body {
     font-weight: 300;
     display: flex;
     justify-content: center;
-    padding: 50px 294px 30px 294px;
+    padding: 30px 294px 10px 294px;
 }
 
 .profile-data span {
@@ -35,13 +35,19 @@ body {
     padding: 18px;
 }
 
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    
+}
+
 .buyer-card {
     width: 230px;
     box-shadow: 0px 6px 9px 3px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     margin: 40px 0;
-    display: grid;
-
+    
 }
 
 img[alt="stuff"]{
