@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать изделие</title>
+</head>
+<body>
+    <form id="main-form" method="post" onsubmit="return checkCreateProduct(this)">
+        <label for="Name">Название товара:</label>
+        <input type="text" name="Name" placeholder="Название" id="name"><br><br>
+        <label for="Picture">Изображение:</label>
+        <input type="image" name="Picture" placeholder="Изображение" id="picture"><br><br>
+        <label for="Price">Цена:</label>
+        <input type="text" name="Price" placeholder="Цена" id="price"><br><br>
+        <label for="Size">Размер:</label>
+        <input type="text" name="Size" placeholder="Размер" id="size"><br><br>
+        <label for="Mass">Масса:</label>
+        <input type="text" name="Mass" placeholder="Масса" id="mass"><br><br>
+        <label for="Description">Описание:</label>
+        <input type="text" name="Description" placeholder="Описание" id="description"><br><br>
+        <div id="error" style="color: red;"></div>
+        <input type="submit" name="create-product-button" value="Создать изделие">
+    </form>
+</body>
+</html>
