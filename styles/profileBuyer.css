@@ -1,0 +1,71 @@
+body {
+    font-size: 12px;
+}
+
+.profile-buyer-page {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0 90px;
+    color: #333;
+}
+
+.profile-data {
+    font-size: 1.3em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 50px 294px 30px 294px;
+}
+
+.profile-data span {
+    margin: 0 85px;
+}
+
+.purchase-title {
+    width: 100%;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #90FF39;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.purchase-title label {
+    padding: 18px;
+}
+
+.buyer-card {
+    width: 230px;
+    box-shadow: 0px 6px 9px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 40px 0;
+    display: grid;
+
+}
+
+img[alt="stuff"]{
+    width: inherit;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+}
+
+.buyer-card-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.buyer-price{
+    display: flex;
+    align-items: center;
+}
+
+input[name="CardDetails"]{
+    position: inherit;
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    font-weight: 600;
+}
