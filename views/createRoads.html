@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/companyProfile.css">
+    <title>Создать пути</title>
+</head>
+<body>
+    <div class="flex">
+        <div class="profile-nav">
+            <a href="">Главная</a>
+            <div class="nav-select">
+                <a href="/views/createProduct.html">Изделия</a>
+            </div>
+            <a href="">Выбрать склад или пункт выдачи</a>
+            <a href="">Маршруты</a>
+            <input type="submit" name="ProfileExit" value="Выйти">
+        </div>
+
+        <form id="main-form-create-product" method="post" onsubmit="return checkCreateProduct(this)">
+            <div>
+                <label for="Way1">Пункт 1:</label>
+                <input type="text" name="Way1" placeholder="Пункт 1" id="way1"><br><br>
+                <label for="Way2">Пункт 2</label>
+                <input type="text" name="Way2" placeholder="Пункт 2" id="way2"><br><br>
+            </div>
+            <div>
+                <label for="Distance">Расстояние:</label>
+                <input type="text" name="Distance" placeholder="Расстояние" id="distance"><br><br>
+                <label for="WaysPrice">Стоимость:</label>
+                <input type="text" name="WaysPrice" placeholder="Стоимость" id="waysprice"><br><br>    
+                <div id="error" style="color: red;"></div>
+                <input type="submit" name="create-way-button" value="Сохранить">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
