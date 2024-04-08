@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить адрес склада или пункта выдачи</title>
+</head>
+<body>
+    <form id="create-storagehouse" method="post" onsubmit="return checkCreateStorageHouse(this)">
+        <label for="Address">Адрес:</label>
+        <input type="text" name="Address" placeholder="Адрес" id="address"><br><br>
+        <label for="Picture">Это склад</label>
+        <input type="checkbox" name="Warehouse" id="warehouse"><br><br>
+        <div id="error" style="color: red;"></div>
+        <input type="submit" name="create-storage-button" value="Сохранить">
+    </form>
+</body>
+</html>
