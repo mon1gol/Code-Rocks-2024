@@ -1,0 +1,40 @@
+.flex{
+    display: flex;
+}
+
+.profile-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: auto;
+    border-radius: 0 15px 0 0;
+    border: 2px solid #90FF39;
+    border-left: none;
+    padding-top: 15px;
+    margin-right: 25px;
+}
+
+.profile-nav a{
+    color: inherit;
+    text-decoration: inherit;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.nav-select{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #90FF39;
+}
+
+input[name="ProfileExit"]{
+    background-color: #DB2A2A;
+    position: inherit;
+}
+
+input[name="ProfileExit"]:hover{
+    background-color: #C90B0B;
+}
