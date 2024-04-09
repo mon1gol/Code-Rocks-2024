@@ -3,6 +3,7 @@ function regCheckForm(el){
     var email = el.email.value;
     var pass = el.pass.value;
     var repass = el.repass.value;
+    var bebra = 0;
 
     var fail = "";
     if (name == "" || email == "" || pass == "" || repass == "") {
@@ -39,7 +40,7 @@ function loginCheckForm(el){
     if (name == "" || pass == "") {
         fail = "Заполните все поля";
     }
-
+        
     if (fail != "") {
         document.getElementById('error').innerHTML = fail;
     } else{

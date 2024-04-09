@@ -5,36 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/login.css">
     <link rel="stylesheet" href="/styles/companyProfile.css">
+    <link rel="stylesheet" href="/styles/profileBuyer.css">
+    <link rel="stylesheet" href="/styles/createRoads.css">
     <title>Создать пути</title>
 </head>
 <body>
+    <div class="profile-data">
+        <span>Баба Йоба</span>
+        <span>profile@mail.ru</span>
+    </div>
+
     <div class="flex">
         <div class="profile-nav">
-            <a href="">Главная</a>
+            <a href="/views/companyProfile.html">Профиль</a>
             <a href="/views/createProduct.html">Изделия</a>
+            <a href="/views/createStorageHouse.html">Выбрать склад или пункт выдачи</a>
             <div class="nav-select">
-                <a href="">Выбрать склад или пункт выдачи</a>
+                <a href="/views/createRoads.html">Маршруты</a>
             </div>
-            <a href="">Маршруты</a>
             <input type="submit" name="ProfileExit" value="Выйти">
         </div>
 
-        <form id="main-form-create-product" method="post" onsubmit="return checkCreateProduct(this)">
+        <form id="main-form-create-roads" method="post" onsubmit="return checkCreateProduct(this)">
             <div>
-                <label for="Way1">Пункт 1:</label>
-                <input type="text" name="Way1" placeholder="Пункт 1" id="way1"><br><br>
-                <label for="Way2">Пункт 2</label>
-                <input type="text" name="Way2" placeholder="Пункт 2" id="way2"><br><br>
+                <label for="IdLocalityA">Пункт 1:</label>
+                <input type="text" name="IdLocalityA" placeholder="Пункт 1" id="idLocalityA" list="way-selected"><br><br>
+                <!-- <div style="width:150;height:1px;background-color:#90FF39;"></div> -->
+                <datalist id="way-selected">
+                    <option id="databebra" data-value="1">Москва</option>
+                    <option data-value="2">Тверь</option>
+                    <option data-value="3">Санкт-Петербург</option>
+                    <option data-value="4">Осташков</option>
+                </datalist>
+                <label for="Price">Стоимость:</label>
+                <input type="text" name="Price" placeholder="Стоимость" id="sprice"><br><br>    
+                <label for="Time">Время доставки:</label>
+                <input type="text" name="Time" placeholder="Время доставки" id="time"><br><br>
             </div>
             <div>
+                <label for="IdLocalityB">Пункт 2</label>
+                <input type="text" name="IdLocalityB" placeholder="Пункт 2" id="idLocalityB"><br><br>
                 <label for="Distance">Расстояние:</label>
                 <input type="text" name="Distance" placeholder="Расстояние" id="distance"><br><br>
-                <label for="WaysPrice">Стоимость:</label>
-                <input type="text" name="WaysPrice" placeholder="Стоимость" id="waysprice"><br><br>    
+                <label for="Transport">Тип доставки:</label>
+                <select name="Transport">
+                    <option value="На авто">На авто</option>
+                    <option value="Самолетом">Самолетом</option>
+                    <option value="Кораблем">Кораблем</option>
+                    <option value="Поездом">Поездом</option>
+                </select>
                 <div id="error" style="color: red;"></div>
                 <input type="submit" name="create-way-button" value="Сохранить">
             </div>
         </form>
     </div>
+    <script src="/js/createProduct.js"></script>
 </body>
 </html>

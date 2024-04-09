@@ -1,0 +1,21 @@
+#main-form-create-roads{
+    border-radius: 15px;
+    border: 2px solid #90FF39;
+    padding-top: 15px;
+    margin-right: 25px;
+    display: flex;
+}
+
+#main-form-create-roads, select[name="Transport"]{
+    border-radius: 15px;
+    width: 210px;
+    height: 50px;
+    border-color: #90FF39;
+}
+
+#idLocalityA,
+#idLocalityB{
+    width: 300px;
+    height: 50px;
+}
+

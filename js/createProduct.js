@@ -6,3 +6,11 @@ file.addEventListener('change', function(){
   image.style.display = "block";
   image.style.cssText = "width: 120px; height: 120px";
 });
+
+
+function checkCreateProduct(forma){
+  var option = document.getElementById("databebra");
+  var dataValue = option.getAttribute("data-value");
+  console.log(dataValue);
+  return false;
+}
