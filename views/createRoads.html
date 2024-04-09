@@ -26,7 +26,7 @@
             <input type="submit" name="ProfileExit" value="Выйти">
         </div>
 
-        <form id="main-form-create-roads" method="post" onsubmit="return checkCreateProduct(this)">
+        <form class="main-form-create-roads" id="main-form-create-roads" method="post" onsubmit="return checkCreateProduct(this)">
             <div>
                 <label for="IdLocalityA">Пункт 1:</label>
                 <input type="text" name="IdLocalityA" placeholder="Пункт 1" id="idLocalityA" list="way-selected"><br><br>
@@ -44,7 +44,13 @@
             </div>
             <div>
                 <label for="IdLocalityB">Пункт 2</label>
-                <input type="text" name="IdLocalityB" placeholder="Пункт 2" id="idLocalityB"><br><br>
+                <input type="text" name="IdLocalityB" placeholder="Пункт 2" id="idLocalityB" list="way-selected"><br><br>
+                <datalist id="way-selected">
+                    <option id="databebra" data-value="1">Москва</option>
+                    <option data-value="2">Тверь</option>
+                    <option data-value="3">Санкт-Петербург</option>
+                    <option data-value="4">Осташков</option>
+                </datalist>
                 <label for="Distance">Расстояние:</label>
                 <input type="text" name="Distance" placeholder="Расстояние" id="distance"><br><br>
                 <label for="Transport">Тип доставки:</label>
@@ -55,10 +61,23 @@
                     <option value="Поездом">Поездом</option>
                 </select>
                 <div id="error" style="color: red;"></div>
-                <input type="submit" name="create-way-button" value="Сохранить">
+                <input type="submit" name="create-road-button" value="Сохранить">
             </div>
         </form>
     </div>
+
+    <div class="flex">  
+        <div class="storage-container">
+            <div class="storage-title">Склады</div>
+            <div class="storage-data">г.Москва</div>
+            <div class="storage-data">г.Тверь</div>
+            <div class="storage-data">г.Санкт-Петербург</div>
+        </div>
+        <div class="storage-container">
+    
+        </div>
+    </div>
+
     <script src="/js/createProduct.js"></script>
 </body>
 </html>

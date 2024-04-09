@@ -1,0 +1,41 @@
+.create-storagehouse{
+    border-radius: 15px;
+    border: 2px solid #90FF39;
+    padding: 30px 30px;
+    height: 400px;
+    width: 1000px;
+}
+
+.create-storagehouse input[name="Address"]{
+    border-radius: 15px;
+    height: 50px;
+    border-color: #90FF39;
+}
+
+input[name="Warehouse"]{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 4px;
+}
+
+.create-storagehouse label{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+div[name="check-storage"]{
+    display: flex;
+    align-items: center;
+}
+
+input[name="create-storage-button"]{
+    margin-top: 25px;
+    position: relative;
+    border-radius: 15px;
+    top: 100px;
+    left: 750px;
+    width: 210px;
+    height: 50px;
+    border-color: #90FF39;
+}

@@ -26,7 +26,7 @@
             <input type="submit" name="ProfileExit" value="Выйти">
         </div>
     
-        <form id="main-form-create-product" method="post" onsubmit="return checkCreateProduct(this)">
+        <form class="main-form-create-product" id="main-form-create-product" method="post" onsubmit="return checkCreateProduct(this)">
             <div>
                 <label for="Name">Название изделия:</label>
                 <input type="text" name="Name" placeholder="Название" id="name"><br><br>
@@ -44,8 +44,8 @@
                 <label for="Mass">Масса:</label>
                 <input type="text" name="Mass" placeholder="Масса" id="mass"><br><br>
                 <div id="error" style="color: red;"></div>
+                <input type="submit" name="create-product-button" value="Создать изделие">
             </div>
-            <input type="submit" name="create-product-button" value="Создать изделие">
         </form>
     </div>
 <script src="/js/createProduct.js"></script>
