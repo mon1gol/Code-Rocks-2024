@@ -1,0 +1,50 @@
+#main-form-create-delivery{
+    width: 100%;
+    font-size: 1.2em;
+    display: flex;
+    padding: 30px 30px;
+    border-radius: 15px;
+    border: 2px solid #90FF39;
+}
+
+#main-form-create-delivery input[type="text"],
+select[name="PickupPoint"],
+select[name="TypeTransport"]{
+    border-radius: 15px;
+    width: 210px;
+    height: 50px;
+    color: #333;
+    padding: 10px 10px;
+    border-color: #90FF39;
+}
+
+input[name="DataDelivery"]{
+    border-radius: 15px;
+    width: 210px;
+    height: 50px;
+    color: #333;
+    padding: 0 10px;
+    text-decoration: none;
+    border-color: #90FF39;
+}
+
+
+div[name="delivery-select-radio"]{
+    display: flex;
+    align-items: center;
+}
+
+div[name="delivery-select-radio"] label{
+    position: relative;
+    bottom: 7px;
+}
+
+#profileExit{
+    color: white;
+    background-color: #DB2A2A;
+    position: inherit;
+}
+
+#profileExit:hover{
+    background-color: #C90B0B;
+}
