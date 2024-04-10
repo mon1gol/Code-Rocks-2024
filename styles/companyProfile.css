@@ -40,3 +40,11 @@ input[name="ProfileExit"]{
 input[name="ProfileExit"]:hover{
     background-color: #C90B0B;
 }
+
+#make-order{
+    position: inherit;
+    margin: auto;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    font-weight: 600;
+}
