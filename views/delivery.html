@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/companyProfile.css">
+    <link rel="stylesheet" href="/styles/profileBuyer.css">
+    <title>Оформление доставки</title>
+</head>
+<body>
+    <div class="profile-data">
+        <span>Баба Йоба</span>
+        <span>profile@mail.ru</span>
+    </div>
+
+    <div class="flex">
+        <div class="profile-nav">
+            <div class="nav-select">
+                <a href="/views/companyProfile.html">Профиль</a>
+            </div>
+            <input type="submit" name="ProfileExit" value="Выйти">
+        </div>
+
+        <form class="main-form-create-delivery" id="main-form-create-delivery" method="post" onsubmit="return checkCreateDelivery(this)">
+            <div>
+                <select name="PickupPoint" id="pickupPoint">
+                    <option data-value="1">Москва</option>
+                    <option data-value="2">Тверь</option>
+                    <option data-value="3">Санкт-Петербург</option>
+                    <option data-value="4">Осташков</option>
+                </select>
+            </div>
+            <div>
+                <label for="DeliverySelect">Выберите тип доставки:</label><br><br>
+                <div>
+                    <input type="radio" onchange="" name="DeliverySelect" value="cheap">
+                    <label for="cheap">Самый дешевый</label><br><br>
+                </div>
+                <div>
+                    <input type="radio" name="DeliverySelect" value="fast">
+                    <label for="cheap">Самый быстрый</label>
+                </div>
+
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
