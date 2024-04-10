@@ -12,3 +12,10 @@
     text-align: center;
     letter-spacing: 2px;
 }
+
+.catalog-rows{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px 0;
+}
