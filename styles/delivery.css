@@ -1,7 +1,8 @@
 #main-form-create-delivery{
-    width: 100%;
+    width: auto;
     font-size: 1.2em;
     display: flex;
+    justify-content: space-around;
     padding: 30px 30px;
     border-radius: 15px;
     border: 2px solid #90FF39;
@@ -18,16 +19,34 @@ select[name="TypeTransport"]{
     border-color: #90FF39;
 }
 
-input[name="DataDelivery"]{
-    border-radius: 15px;
-    width: 210px;
-    height: 50px;
-    color: #333;
-    padding: 0 10px;
-    text-decoration: none;
-    border-color: #90FF39;
+.otstup input,
+select{
+    margin-bottom: 30px;
 }
 
+input[name="DataDelivery"]{
+    all: unset;
+}
+
+#dateDelivery{
+    border-radius: 15px;
+    width: 187px;
+    height: 46px;
+    color: #333;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    text-decoration: none;
+    border: 1px solid #90FF39;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#delivery-select-container{
+    border-radius: 15px;
+    border: 2px solid #90FF39;
+    padding: 10px 30px;
+}
 
 div[name="delivery-select-radio"]{
     display: flex;
@@ -36,7 +55,15 @@ div[name="delivery-select-radio"]{
 
 div[name="delivery-select-radio"] label{
     position: relative;
-    bottom: 7px;
+    bottom: 24px;
+    left: 20px;
+}
+
+input[name="PriceRange"]{
+    background: #90FF39;
+    margin-bottom: 30px;
+    width: 250px;
+    cursor: pointer;
 }
 
 #profileExit{
@@ -47,4 +74,11 @@ div[name="delivery-select-radio"] label{
 
 #profileExit:hover{
     background-color: #C90B0B;
+}
+
+#create-delivery-button{
+    width: 300px;
+    height: 50px;
+    position: inherit;
+    color: white;
 }
