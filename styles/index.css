@@ -124,6 +124,7 @@ button {
     position: relative;
     top: 23px;
     left: 471px;
+    animation: move-circle 20s ease-in-out infinite;
 }
 
 .krug1 div {
@@ -143,6 +144,7 @@ button {
     position: relative;
     bottom: 250px;
     left: 87px;
+    animation: move-circle-inv 15s ease-in-out infinite;
 }
 
 .krug3 {
@@ -157,6 +159,7 @@ button {
     position: relative;
     bottom: 450px;
     left: 800px;
+    animation: move-circle 20s ease-in-out infinite;
 }
 
 .krug4 {
@@ -171,11 +174,13 @@ button {
     position: relative;
     bottom: 700px;
     left: 250px;
+    animation: move-circle-inv 15s ease-in-out infinite;
 }
 
-.move4{
+.move4 {
     bottom: 800px;
     left: 900px;
+    animation: move-circle 20s ease-in-out infinite;
 }
 
 .krug5 {
@@ -186,19 +191,22 @@ button {
     position: relative;
     bottom: 1450px;
     left: 70px;
+    animation: move-circle-inv 15s ease-in-out infinite;
 }
 
-.move5-2{
+.move5-2 {
     bottom: 2190px;
     left: 1000px;
+    animation: move-circle 20s ease-in-out infinite;
 }
 
-.move5-3{
+.move5-3 {
     bottom: 2050px;
     left: 1200px;
+    animation: move-circle-inv 15s ease-in-out infinite;
 }
 
-.krug6{
+.krug6 {
     background-color: #90FF39;
     border-radius: 250px;
     width: 112px;
@@ -206,14 +214,16 @@ button {
     position: relative;
     bottom: 2300px;
     left: 850px;
+    animation: move-circle 20s ease-in-out infinite;
 }
 
-.move6-2{
+.move6-2 {
     bottom: 1900px;
     left: 800px;
+    animation: move-circle-inv 15s ease-in-out infinite;
 }
 
-.krug7{
+.krug7 {
     background-color: #90FF39;
     border-radius: 250px;
     width: 140px;
@@ -221,14 +231,17 @@ button {
     position: relative;
     bottom: 2650px;
     right: 50px;
+    animation: move-circle 20s ease-in-out infinite;
+
 }
 
-.move7-2{
+.move7-2 {
     bottom: 2600px;
     left: 30px;
+    animation: move-circle-inv 15s ease-in-out infinite;
 }
 
-.krug8{
+.krug8 {
     background-color: #90FF39;
     border-radius: 250px;
     width: 148px;
@@ -236,28 +249,100 @@ button {
     position: relative;
     bottom: 2100px;
     left: 730px;
+    animation: move-circle-inv 20s ease-in-out infinite;
 }
 
-.move8-2{
+.move8-2 {
     left: 50px;
+    animation: move-circle 15s ease-in-out infinite;
 }
 
-.main-description{
+@keyframes move-circle {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(30px, 30px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes move-circle-inv {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-30px, -30px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.main-description {
     margin-top: 50px;
     padding: 80px 50px;
     background-image: url(/img/blur1.png);
-    height: 400px;
+    height: auto;
     width: auto;
     background-repeat: no-repeat;
     font-size: 1.5em;
+}
+
+.main-description-one {
     display: flex;
 }
 
-div[name="descrip-one"]{
+.our-team {
+    font-size: 1.3em;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.authors {
+    display: flex;
+    margin-top: 130px;
+    justify-content: center;
+}
+
+.authors-one {
+    text-align: end;
+    margin-right: 50px;
+}
+
+.authors-two {
+    margin-left: 50px;
+}
+
+.authors label {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+div[name="descrip-one"] {
     width: 700px;
     margin-right: 30px;
 }
 
-div[name="descrip-two"]{
+div[name="descrip-two"] {
     width: 700px;
+}
+
+footer {
+    background-color: #90FF394D;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer img {
+    margin-left: 10px;
 }

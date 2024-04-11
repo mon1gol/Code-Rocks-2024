@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/companyProfile.css">
-    <link rel="stylesheet" href="/styles/createRoads.css">
-    <link rel="stylesheet" href="/styles/profileBuyer.css">
     <link rel="stylesheet" href="/styles/delivery.css">
     <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/profileBuyer.css">
     <title>Оформление доставки</title>
 </head>
 <body>
@@ -15,11 +13,8 @@
         <span>Баба Йоба</span>
         <span>profile@mail.ru</span>
     </div>
-
-    
-
         <form class="main-form-create-delivery" id="main-form-create-delivery" method="post" onsubmit="return checkCreateDelivery(this)">
-            <div>
+            <div class="otstup">
                 <label for="PickupPoint">Выберите пункт выдачи</label><br>
                 <select name="PickupPoint" id="pickupPoint">
                     <option data-value="1">Москва</option>
@@ -27,22 +22,30 @@
                     <option data-value="3">Санкт-Петербург</option>
                     <option data-value="4">Осташков</option>
                 </select>
-
-                <label for="DeliverySelect">Выберите тип доставки:</label><br><br>
-                <div name="delivery-select-radio">
-                    <input type="radio" onchange="" name="DeliverySelect" value="cheap">
-                    <label for="cheap">Самый дешевый</label><br><br>
-                </div>
-                <div name="delivery-select-radio">
-                    <input type="radio" name="DeliverySelect" value="fast">
-                    <label for="cheap">Самый быстрый</label>
-                </div>
+                
+                <label for="DateDelivery">Дата доставки:</label><br>
+                <input id="dateDelivery" type="date" name="DataDelivery">
+                <label for="TypeTransport">Тип транспорта:</label>
+                <select name="TypeTransport" id="typeTransport">
+                    <option data-value="1">Автомобиль</option>
+                    <option data-value="2">Самолет</option>
+                    <option data-value="3">Корабль</option>
+                </select>
             </div>
-            <div>
-                <label for="DateDelivery">Дата доставки:</label>
-                <input type="date" name="DataDelivery"><br><br>
+            <div class="otstup">
+                <div id="delivery-select-container">
+                    <label for="DeliverySelect">Выберите тип доставки:</label><br>
+                    <div name="delivery-select-radio">
+                        <input type="radio" onchange="" name="DeliverySelect" value="cheap">
+                        <label for="cheap">Самый дешевый</label><br><br>
+                    </div>
+                    <div name="delivery-select-radio">
+                        <input type="radio" name="DeliverySelect" value="fast">
+                        <label for="cheap">Самый быстрый</label>
+                    </div>
+                </div>
                 <label for="PriceRange">Цена доставки</label>
-                <input name="PriceRange" type="range" id="price-range" min="1" max="100" value="50">
+                <input name="PriceRange" type="range" id="price-range" min="1000" max="10000" step="1000" value="50">
                 <div id="price-value"></div>
                 <script>
                     const priceRange = document.getElementById('price-range');
@@ -52,14 +55,8 @@
                     });
                 </script>
 
-                <label for="TypeTransport">Тип транспорта:</label>
-                <select name="TypeTransport" id="typeTransport">
-                    <option data-value="1">Автомобиль</option>
-                    <option data-value="2">Самолет</option>
-                    <option data-value="3">Корабль</option>
-                </select>
                 <div id="error" style="color: red;"></div>
-                <input type="submit" name="create-delivery-button" value="Подтвердить">
+                <input type="submit" id="create-delivery-button" value="Подтвердить">
             </div>
         </form>
     </div>
