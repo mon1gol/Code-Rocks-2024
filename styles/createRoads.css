@@ -3,13 +3,15 @@
     border: 2px solid #90FF39;
     padding: 30px 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     height: 400px;
     width: 1000px;
 }
 
 .main-form-create-roads input,
-select[name="Transport"] {
+select[name="Transport"],
+select[name="IdLocalityA"],
+select[name="IdLocalityB"] {
     border-radius: 15px;
     width: 210px;
     height: 50px;
@@ -21,10 +23,13 @@ select[name="Transport"] {
     margin-left: 130px;
 }
 
-#idLocalityA,
-#idLocalityB {
-    width: 300px;
-    height: 50px;
+.po-centru{
+    margin-left: 100px;
+}
+
+select{
+    color: #000000;
+    padding-left: 10px;
 }
 
 #idLocalityB,

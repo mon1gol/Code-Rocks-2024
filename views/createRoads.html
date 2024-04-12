@@ -41,30 +41,28 @@
             <input type="submit" name="ProfileExit" value="Выйти">
         </div>
         <div>
-            <form class="main-form-create-roads" id="main-form-create-roads" method="post" onsubmit="return checkCreateProduct(this)">
-                <div>
+            <form class="main-form-create-roads" id="main-form-create-roads" method="post" onsubmit="return checkCreateRoads(this)">
+                <div class="po-centru">
                     <label for="IdLocalityA">Пункт 1:</label>
-                    <input type="text" name="IdLocalityA" placeholder="Пункт 1" id="idLocalityA" list="way-selected"><br><br>
-                    <datalist id="way-selected">
+                    <select name="IdLocalityA" id="idLocalityA">
                         <option id="databebra" data-value="1">Москва</option>
                         <option data-value="2">Тверь</option>
                         <option data-value="3">Санкт-Петербург</option>
                         <option data-value="4">Осташков</option>
-                    </datalist>
+                    </select>
                     <label for="Price">Стоимость:</label>
-                    <input type="text" name="Price" placeholder="Стоимость" id="sprice"><br><br>    
+                    <input type="text" name="Price" placeholder="Стоимость" id="price"><br><br>    
                     <label for="Time">Время доставки:</label>
                     <input type="text" name="Time" placeholder="Время доставки" id="time"><br><br>
                 </div>
                 <div>
                     <label for="IdLocalityB">Пункт 2</label>
-                    <input type="text" name="IdLocalityB" placeholder="Пункт 2" id="idLocalityB" list="way-selected"><br><br>
-                    <datalist id="way-selected">
+                    <select name="IdLocalityB" id="idLocalityB">
                         <option id="databebra" data-value="1">Москва</option>
                         <option data-value="2">Тверь</option>
                         <option data-value="3">Санкт-Петербург</option>
                         <option data-value="4">Осташков</option>
-                    </datalist>
+                    </select>
                     <label for="Distance">Расстояние:</label>
                     <input type="text" name="Distance" placeholder="Расстояние" id="distance"><br><br>
                     <label for="Transport">Тип доставки:</label>
@@ -129,51 +127,10 @@
                     </tr>
                 </tbody>
             </table>
-                <!-- <div id="profile-storage">
-                    <label for="">Маршруты</label>
-                    <div id="profile-storage-rows">
-                        <div id="profile-storage-column">
-                            <span>Пункт 1</span>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                        </div>
-                        <div>
-                            <span for="">Пункт 2</span>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
-                        </div>
-                        <div>
-                            <span for="">Стоимость</span>
-                            <div>30 000 руб</div>
-                        </div>
-                        <div>
-                            <span for="">Расстояние</span>
-                            <div>300 км</div>
-                        </div>
-                        <div>
-                            <span for="">Время доставки</span>
-                            <div>5 ч</div>
-                        </div>
-                        <div>
-                            <span for="">Тип транспорта</span>
-                            <div>Автомобиль</div>
-                            <div>Автомобиль</div>
-                            <div>Автомобиль</div>
-                            <div>Автомобиль</div>
-                            <div>Автомобиль</div>
-                        </div>
-                        <div>
-                            <button name="delete"><img src="/img/delete.png" alt="delete"></button>
-                        </div> 
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
     <script src="/js/createProduct.js"></script>
+    <script src="/js/formControl.js"></script>
 </body>
 </html>
