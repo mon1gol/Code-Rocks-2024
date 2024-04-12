@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/card.css">
+    <link rel="stylesheet" href="/styles/elements/card.css">
     <link rel="stylesheet" href="/styles/login.css">
     <link rel="stylesheet" href="/styles/companyProfile.css">
     <link rel="stylesheet" href="/styles/profileBuyer.css">
+    <link rel="stylesheet" href="/styles/elements/navigationProfile.css">
+    <link rel="stylesheet" href="/styles/elements/scrollbar.css">
+
     <title>Профиль компании</title>
 </head>
 
@@ -18,8 +21,8 @@
     </div>
 
     <div class="flex">
-        <div class="profile-nav">
-            <div class="nav-select">
+        <div id="profileNav" class="profile-nav">
+            <div id="navSelect" class="nav-select">
                 <a href="/views/companyProfile.html">Профиль</a>
             </div>
             <a href="/views/createProduct.html">Изделия</a>
@@ -28,10 +31,10 @@
             <input type="submit" name="ProfileExit" value="Выйти">
         </div>
 
-        <div class="">
-
-            
-
+        <div>
+            <div id="purchase-title">
+                <label for="purchase-title">Товары</label>
+            </div>
             <div class="rows">
                 <div class="card">
                     <img src="/img/krujka.png" name="Picture" alt="stuff">
@@ -41,12 +44,12 @@
                     <div name="Description">Описание</div>
                     <div class="price">
                         <div class="card-title" name="Price">13$</div>
-                        <input type="submit" class="make-order" id="make-order" name="CardDetails" value="Подробнее   >">
+                        <input type="submit" class="make-order" id="make-order" name="CardDetails"
+                            value="Подробнее   >">
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 

@@ -2,43 +2,29 @@
     display: flex;
 }
 
-.profile-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 230px;
-    height: 700px;
-    border-radius: 0 15px 0 0;
-    border: 2px solid #90FF39;
-    border-left: none;
-    padding-top: 15px;
-    margin-right: 25px;
-}
-
-.profile-nav a{
-    color: inherit;
-    text-decoration: inherit;
-    font-size: 1.3em;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.nav-select{
+#purchase-title{
     width: 100%;
-    margin-bottom: 30px;
-    padding: 15px 0;
-    text-align: center;
+    height: 55px;
+    border-radius: 15px;
     background-color: #90FF39;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-input[name="ProfileExit"]{
-    color: white;
-    background-color: #DB2A2A;
-    position: inherit;
+#purchase-title label{
+    margin: 0;
 }
 
-input[name="ProfileExit"]:hover{
-    background-color: #C90B0B;
+#profileNav{
+    padding-top: 0;
+}
+
+#navSelect{
+    border-radius: 0 15px 0 0;
 }
 
 #make-order{

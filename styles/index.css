@@ -125,6 +125,7 @@ button {
     top: 23px;
     left: 471px;
     animation: move-circle 20s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .krug1 div {
@@ -145,6 +146,7 @@ button {
     bottom: 250px;
     left: 87px;
     animation: move-circle-inv 15s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .krug3 {
@@ -160,6 +162,7 @@ button {
     bottom: 450px;
     left: 800px;
     animation: move-circle 20s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .krug4 {
@@ -175,12 +178,14 @@ button {
     bottom: 700px;
     left: 250px;
     animation: move-circle-inv 15s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .move4 {
     bottom: 800px;
     left: 900px;
     animation: move-circle 20s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .krug5 {
@@ -192,18 +197,21 @@ button {
     bottom: 1450px;
     left: 70px;
     animation: move-circle-inv 15s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .move5-2 {
     bottom: 2190px;
     left: 1000px;
     animation: move-circle 20s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .move5-3 {
     bottom: 2050px;
     left: 1200px;
     animation: move-circle-inv 15s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .krug6 {
@@ -215,12 +223,14 @@ button {
     bottom: 2300px;
     left: 850px;
     animation: move-circle 20s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .move6-2 {
     bottom: 1900px;
     left: 800px;
     animation: move-circle-inv 15s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .krug7 {
@@ -232,13 +242,14 @@ button {
     bottom: 2650px;
     right: 50px;
     animation: move-circle 20s ease-in-out infinite;
-
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .move7-2 {
     bottom: 2600px;
     left: 30px;
     animation: move-circle-inv 15s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .krug8 {
@@ -250,11 +261,13 @@ button {
     bottom: 2100px;
     left: 730px;
     animation: move-circle-inv 20s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 .move8-2 {
     left: 50px;
     animation: move-circle 15s ease-in-out infinite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes move-circle {

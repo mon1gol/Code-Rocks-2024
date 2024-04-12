@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/companyProfile.css">
     <link rel="stylesheet" href="/styles/profileBuyer.css">
     <link rel="stylesheet" href="/styles/createStorageHouse.css">
+    <link rel="stylesheet" href="/styles/elements/navigationProfile.css">
     <title>Добавить адрес склада или пункта выдачи</title>
 </head>
 <body>
@@ -26,16 +27,37 @@
             <input type="submit" name="ProfileExit" value="Выйти">
         </div>
 
-        <form class="create-storagehouse" id="create-storagehouse" method="post" onsubmit="return checkCreateStorageHouse(this)">
-            <label for="Address">Адрес:</label>
-            <input type="text" name="Address" placeholder="Адрес" id="address"><br><br>
-            <div name="check-storage">
-                <label for="Warehouse">Это склад</label>
-                <input type="checkbox" name="Warehouse" id="warehouse" value="true">
+        <div>
+            <form class="create-storagehouse" id="create-storagehouse" method="post" onsubmit="return checkCreateStorageHouse(this)">
+                <label for="Address">Адрес:</label>
+                <input type="text" name="Address" placeholder="Адрес" id="address"><br><br>
+                <div name="check-storage">
+                    <label for="Warehouse">Это склад</label>
+                    <input type="checkbox" name="Warehouse" id="warehouse" value="true">
+                </div>
+                <div id="error" style="color: red;"></div>
+                <input type="submit" name="create-storage-button" value="Сохранить">
+            </form>
+    
+            <div id="profile-storage-info">
+                <div id="profile-storage">
+                    <label for="">Склады</label>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                </div>
+                <div id="profile-pickup-point">
+                    <label for="">Пункты выдачи</label>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                    <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                </div>
             </div>
-            <div id="error" style="color: red;"></div>
-            <input type="submit" name="create-storage-button" value="Сохранить">
-        </form>
+        </div>
+
     </div>
 </body>
 </html>

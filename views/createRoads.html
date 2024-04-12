@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/styles/companyProfile.css">
     <link rel="stylesheet" href="/styles/profileBuyer.css">
     <link rel="stylesheet" href="/styles/createRoads.css">
+    <link rel="stylesheet" href="/styles/elements/navigationProfile.css">
+    <link rel="stylesheet" href="/styles/createStorageHouse.css">
     <title>Создать пути</title>
 </head>
 <body>
@@ -25,58 +27,140 @@
             </div>
             <input type="submit" name="ProfileExit" value="Выйти">
         </div>
-
-        <form class="main-form-create-roads" id="main-form-create-roads" method="post" onsubmit="return checkCreateProduct(this)">
-            <div>
-                <label for="IdLocalityA">Пункт 1:</label>
-                <input type="text" name="IdLocalityA" placeholder="Пункт 1" id="idLocalityA" list="way-selected"><br><br>
-                <datalist id="way-selected">
-                    <option id="databebra" data-value="1">Москва</option>
-                    <option data-value="2">Тверь</option>
-                    <option data-value="3">Санкт-Петербург</option>
-                    <option data-value="4">Осташков</option>
-                </datalist>
-                <label for="Price">Стоимость:</label>
-                <input type="text" name="Price" placeholder="Стоимость" id="sprice"><br><br>    
-                <label for="Time">Время доставки:</label>
-                <input type="text" name="Time" placeholder="Время доставки" id="time"><br><br>
+        <div>
+            <form class="main-form-create-roads" id="main-form-create-roads" method="post" onsubmit="return checkCreateProduct(this)">
+                <div>
+                    <label for="IdLocalityA">Пункт 1:</label>
+                    <input type="text" name="IdLocalityA" placeholder="Пункт 1" id="idLocalityA" list="way-selected"><br><br>
+                    <datalist id="way-selected">
+                        <option id="databebra" data-value="1">Москва</option>
+                        <option data-value="2">Тверь</option>
+                        <option data-value="3">Санкт-Петербург</option>
+                        <option data-value="4">Осташков</option>
+                    </datalist>
+                    <label for="Price">Стоимость:</label>
+                    <input type="text" name="Price" placeholder="Стоимость" id="sprice"><br><br>    
+                    <label for="Time">Время доставки:</label>
+                    <input type="text" name="Time" placeholder="Время доставки" id="time"><br><br>
+                </div>
+                <div>
+                    <label for="IdLocalityB">Пункт 2</label>
+                    <input type="text" name="IdLocalityB" placeholder="Пункт 2" id="idLocalityB" list="way-selected"><br><br>
+                    <datalist id="way-selected">
+                        <option id="databebra" data-value="1">Москва</option>
+                        <option data-value="2">Тверь</option>
+                        <option data-value="3">Санкт-Петербург</option>
+                        <option data-value="4">Осташков</option>
+                    </datalist>
+                    <label for="Distance">Расстояние:</label>
+                    <input type="text" name="Distance" placeholder="Расстояние" id="distance"><br><br>
+                    <label for="Transport">Тип доставки:</label>
+                    <select name="Transport">
+                        <option value="На авто">На авто</option>
+                        <option value="Самолетом">Самолетом</option>
+                        <option value="Кораблем">Кораблем</option>
+                        <option value="Поездом">Поездом</option>
+                    </select>
+                    <div id="error" style="color: red;"></div>
+                    <input type="submit" name="create-road-button" value="Сохранить">
+                </div>
+            </form>
+            <div id="profile-storage-info"><table>
+                <thead>
+                    <tr>
+                        <th>Пункт 1</th>
+                        <th>Пункт 2</th>
+                        <th>Стоимость</th>
+                        <th>Расстояние</th>
+                        <th>Время доставки</th>
+                        <th>Тип транспорта</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1г.Москва, </td>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1</td>
+                        <td>30 000 руб</td>
+                        <td>300 км</td>
+                        <td>3 ч</td>
+                        <td>Автомобиль</td>
+                        <td><button name="delete"><img src="/img/delete.png" alt="delete"></button></td>
+                    </tr>
+                    <tr>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1</td>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1</td>
+                        <td>30 000 руб</td>
+                        <td>300 км</td>
+                        <td>3 ч</td>
+                        <td>Автомобиль</td>
+                        <td><button name="delete"><img src="/img/delete.png" alt="delete"></button></td>
+                    </tr>
+                    <tr>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1</td>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1</td>
+                        <td>30 000 руб</td>
+                        <td>300 км</td>
+                        <td>3 ч</td>
+                        <td>Автомобиль</td>
+                        <td><button name="delete"><img src="/img/delete.png" alt="delete"></button></td>
+                    </tr>
+                    <tr>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1</td>
+                        <td>г.Москва, ул.Вилиса Лациса 21к1</td>
+                        <td>30 000 руб</td>
+                        <td>300 км</td>
+                        <td>3 ч</td>
+                        <td>Автомобиль</td>
+                        <td><button name="delete"><img src="/img/delete.png" alt="delete"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+                <!-- <div id="profile-storage">
+                    <label for="">Маршруты</label>
+                    <div id="profile-storage-rows">
+                        <div id="profile-storage-column">
+                            <span>Пункт 1</span>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                        </div>
+                        <div>
+                            <span for="">Пункт 2</span>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                            <div>г.Москва, ул.Вилиса Лациса 21к1</div>
+                        </div>
+                        <div>
+                            <span for="">Стоимость</span>
+                            <div>30 000 руб</div>
+                        </div>
+                        <div>
+                            <span for="">Расстояние</span>
+                            <div>300 км</div>
+                        </div>
+                        <div>
+                            <span for="">Время доставки</span>
+                            <div>5 ч</div>
+                        </div>
+                        <div>
+                            <span for="">Тип транспорта</span>
+                            <div>Автомобиль</div>
+                            <div>Автомобиль</div>
+                            <div>Автомобиль</div>
+                            <div>Автомобиль</div>
+                            <div>Автомобиль</div>
+                        </div>
+                        <div>
+                            <button name="delete"><img src="/img/delete.png" alt="delete"></button>
+                        </div> 
+                    </div>
+                </div> -->
             </div>
-            <div>
-                <label for="IdLocalityB">Пункт 2</label>
-                <input type="text" name="IdLocalityB" placeholder="Пункт 2" id="idLocalityB" list="way-selected"><br><br>
-                <datalist id="way-selected">
-                    <option id="databebra" data-value="1">Москва</option>
-                    <option data-value="2">Тверь</option>
-                    <option data-value="3">Санкт-Петербург</option>
-                    <option data-value="4">Осташков</option>
-                </datalist>
-                <label for="Distance">Расстояние:</label>
-                <input type="text" name="Distance" placeholder="Расстояние" id="distance"><br><br>
-                <label for="Transport">Тип доставки:</label>
-                <select name="Transport">
-                    <option value="На авто">На авто</option>
-                    <option value="Самолетом">Самолетом</option>
-                    <option value="Кораблем">Кораблем</option>
-                    <option value="Поездом">Поездом</option>
-                </select>
-                <div id="error" style="color: red;"></div>
-                <input type="submit" name="create-road-button" value="Сохранить">
-            </div>
-        </form>
-    </div>
-
-    <div class="flex">  
-        <div class="storage-container">
-            <div class="storage-title">Склады</div>
-            <div class="storage-data">г.Москва</div>
-            <div class="storage-data">г.Тверь</div>
-            <div class="storage-data">г.Санкт-Петербург</div>
-        </div>
-        <div class="storage-container">
-    
         </div>
     </div>
-
     <script src="/js/createProduct.js"></script>
 </body>
 </html>
