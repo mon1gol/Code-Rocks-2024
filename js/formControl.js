@@ -7,10 +7,10 @@ function checkCreateProduct(el) {
 
     var fail = "";
     if (name == "" || price == "" || size == "" || description == "" || mass == "") {
-        fail = "Заполните все поля";
+        fail = "Fill in all the fields";
     }
     else if (name.length <= 2 || name.length >= 25) {
-        fail = "Введите корректное название";
+        fail = "Enter the correct name";
     }
     else if (
         name.split(",").length > 1 ||
@@ -28,7 +28,7 @@ function checkCreateProduct(el) {
         name.split("!").length > 1 ||
         name.split("`").length > 1
     ){
-        fail = "Название содержит недопустимые символы";
+        fail = "The name contains invalid characters";
     }
     else if(
         price.split(",").length > 1 ||
@@ -66,7 +66,7 @@ function checkCreateProduct(el) {
         price.split("y").length > 1 ||
         price.split("z").length > 1
     ){
-        fail = "Цена содержит недопустимые символы";
+        fail = "The price contains invalid characters";
     }
     else if(
         size.split(",").length > 1 ||
@@ -103,7 +103,7 @@ function checkCreateProduct(el) {
         size.split("y").length > 1 ||
         size.split("z").length > 1
     ){
-        fail = "Размер содержит недопустимые символы";
+        fail = "The size contains invalid characters";
     }
     else if(
         mass.split(",").length > 1 ||
@@ -140,13 +140,13 @@ function checkCreateProduct(el) {
         mass.split("y").length > 1 ||
         mass.split("z").length > 1
     ){
-        fail = "Масса содержит недопустимые символы";
+        fail = "The mass contains invalid characters";
     }
 
     if (fail != "") {
         document.getElementById('error').innerHTML = fail;
     } else {
-        alert("данные введены корректно");
+        alert("the data is entered correctly");
         window.location = "http://127.0.0.1:5500/index.html";
     }
     return false;
@@ -158,7 +158,7 @@ function checkCreateStorageHouse(el) {
 
     var fail = "";
     if (address == "") {
-        fail = "Заполните все поля";
+        fail = "Fill in all the fields";
     }
     else if(
         address.split("/").length > 1 ||
@@ -193,13 +193,13 @@ function checkCreateStorageHouse(el) {
         address.split("y").length > 1 ||
         address.split("z").length > 1
     ){
-        fail = "Введите корректный адрес";
+        fail = "Enter the correct address";
     }
     
     if (fail != "") {
         document.getElementById('error').innerHTML = fail;
     } else {
-        alert("данные введены корректно");
+        alert("the data is entered correctly");
         window.location = "http://127.0.0.1:5500/index.html";
     }
     return false;
@@ -214,10 +214,10 @@ function checkCreateRoads(el){
     
     var fail = "";
     if(price == "" || time == "" || distance == ""){
-        fail = "Заполните все поля";
+        fail = "Fill in all the fields";
     }
     else if(idLocalityA == idLocalityB){
-        fail = "Выбранные города совпадают";
+        fail = "The selected cities match";
     }
     else if (
         price.split("/").length > 1 ||
@@ -252,7 +252,7 @@ function checkCreateRoads(el){
         price.split("y").length > 1 ||
         price.split("z").length > 1
     ){
-        fail = "Стоимость содержит недопустимые символы";
+        fail = "The price contains invalid characters";
     }
     else if (
         time.split("/").length > 1 ||
@@ -287,7 +287,7 @@ function checkCreateRoads(el){
         time.split("y").length > 1 ||
         time.split("z").length > 1
     ){
-        fail = "Время содержит недопустимые символы";
+        fail = "The time contains invalid characters";
     }
     else if (
         distance.split("/").length > 1 ||
@@ -322,13 +322,13 @@ function checkCreateRoads(el){
         distance.split("y").length > 1 ||
         distance.split("z").length > 1
     ){
-        fail = "Расстояние содержит недопустимые символы";
+        fail = "The distance contains invalid characters";
     }
 
     if (fail != "") {
         document.getElementById('error').innerHTML = fail;
     } else {
-        alert("данные введены корректно");
+        alert("the data is entered correctly");
         window.location = "http://127.0.0.1:5500/index.html";
     }
     return false;

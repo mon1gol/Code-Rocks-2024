@@ -8,13 +8,13 @@ function regCheckForm(el) {
 
     var fail = "";
     if (name == "" || email == "" || pass == "" || repass == "") {
-        fail = "Заполните все поля";
+        fail = "Fill in all the fields";
     }
     else if (!radioBuyer.checked && !radioCompany.checked) {
-        fail = "Заполните все поля";
+        fail = "Fill in all the fields";
     }
     else if (name.length <= 2 || name.length >= 25) {
-        fail = "Введите корректное имя";
+        fail = "Enter the correct name";
     }
     else if (
         name.split(",").length > 1 ||
@@ -32,22 +32,22 @@ function regCheckForm(el) {
         name.split("!").length > 1 ||
         name.split("`").length > 1
     ){
-        fail = "Имя содержит недопустимые символы";
+        fail = "The name contains invalid characters";
     }
     else if (email.split("@").length == 1 || email.split("@").length > 2) {
-        fail = "Email введен некорректно";
+        fail = "The email was entered incorrectly";
     }
     else if (pass != repass) {
-        fail = "Пароль должен совпадать";
+        fail = "The password must match";
     }
     else if (pass.split("&").length > 1 || pass.split(" ").length > 1) {
-        fail = "Недопустимый сивмол в пароле";
+        fail = "Invalid character in the password";
     }
 
     if (fail != "") {
         document.getElementById('error').innerHTML = fail;
     } else {
-        alert("данные введены корректно");
+        alert("the data is entered correctly");
         window.location = "http://127.0.0.1:5500/index.html";
     }
     return false;
@@ -60,7 +60,7 @@ function loginCheckForm(el) {
 
     var fail = ""
     if (name == "" || pass == "") {
-        fail = "Заполните все поля";
+        fail = "Fill in all the fields";
     }
     else if (
         name.split(",").length > 1 ||
@@ -78,17 +78,17 @@ function loginCheckForm(el) {
         name.split("!").length > 1 ||
         name.split("`").length > 1
     ){
-        fail = "Имя содержит недопустимые символы";
+        fail = "The name contains invalid characters";
     }
 
     else if (pass.split("&").length > 1 || pass.split(" ").length > 1) {
-        fail = "Недопустимый сивмол в пароле";
+        fail = "Invalid character in the password";
     }
 
     if (fail != "") {
         document.getElementById('error').innerHTML = fail;
     } else {
-        alert("данные введены корректно");
+        alert("the data is entered correctly");
         window.location = "http://127.0.0.1:5500/index.html";
     }
     return false;
