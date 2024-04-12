@@ -100,25 +100,90 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="purchase-title">
                 <label for="purchase-title">Доставки</label>
             </div>
-            <div class="rows">
-                <div class="card">
-                    <img src="/img/krujka.png" name="Picture" alt="stuff">
-                    <div class="card-title" name="Name">Morning Set</div>
-                    <div name="Size">Размер</div>
-                    <div name="Mass">Масса</div>
-                    <div name="Description">Описание</div>
-                    <div class="price">
-                        <div class="card-title" name="Price">13$</div>
-                        <input type="submit" class="make-order" name="CardDetails" value="Подробнее   >">
+            <div id="rows">
+                <div id="subrows">
+                    <div id="card" class="card">
+                        <img src="/img/krujka.png" name="Picture" alt="stuff">
+                        <div class="card-title" name="Name">Morning Set</div>
+                        <div name="Size">Размер</div>
+                        <div name="Mass">Масса</div>
+                        <div name="Description">Описание</div>
+                        <div class="price">
+                            <div class="card-title" name="Price">13$</div>
+                            <input type="submit" class="make-order" name="CardDetails" value="Подробнее   >">
+                        </div>
+
+                    </div>
+                    <div id="city-names">
+                        <div>
+                            <span class="city-name">Москва</span>
+                            <span class="city-value">true</span>
+                        </div>
+                        <div>
+                            <span class="city-name">Санкт-Петербург</span>
+                            <span class="city-value">false</span>
+                        </div>
+                        <div>
+                            <span class="city-name">Новосибирск</span>
+                            <span class="city-value">true</span>
+                        </div>
+                        <div>
+                            <span class="city-name">Пункт выдачи</span>
+                            <span class="city-value">true</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="subrows">
+                    <div id="card" class="card">
+                        <img src="/img/krujka.png" name="Picture" alt="stuff">
+                        <div class="card-title" name="Name">Morning Set</div>
+                        <div name="Size">Размер</div>
+                        <div name="Mass">Масса</div>
+                        <div name="Description">Описание</div>
+                        <div class="price">
+                            <div class="card-title" name="Price">13$</div>
+                            <input type="submit" class="make-order" name="CardDetails" value="Подробнее   >">
+                        </div>
+
+                    </div>
+                    <div id="city-names">
+                        <div>
+                            <span class="city-name">Москва</span>
+                            <span class="city-value">true</span>
+                        </div>
+                        <div>
+                            <span class="city-name">Санкт-Петербург</span>
+                            <span class="city-value">false</span>
+                        </div>
+                        <div>
+                            <span class="city-name">Новосибирск</span>
+                            <span class="city-value">true</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        const cityNames = document.querySelectorAll("#city-names");
+
+        for (let i = 0; i < cityNames.length; i++) {
+            const cityValues = cityNames[i].getElementsByClassName("city-value");
+
+            for (let j = 0; j < cityValues.length; j++) {
+                if (cityValues[j].innerText === "true") {
+                    cityValues[j].previousElementSibling.style.color = "#90FF39";
+                } else {
+                    cityValues[j].previousElementSibling.style.color = "#333";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

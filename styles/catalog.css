@@ -13,6 +13,11 @@
     letter-spacing: 2px;
 }
 
+.catalog-purchase-title label{
+    position: relative;
+    top: 18px;
+}
+
 .catalog-rows{
     display: grid;
     gap: 40px;
