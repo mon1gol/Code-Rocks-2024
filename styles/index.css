@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+#noscroll{
     overflow-x: hidden;
 }
 
@@ -56,7 +59,7 @@ button {
 }
 
 .main-preview {
-    width: 100%;
+    width: auto;
     height: 705px;
     background-image: url(/img/sklad.png);
     background-repeat: no-repeat;
@@ -64,7 +67,7 @@ button {
 }
 
 .main-title {
-    font-size: 8em;
+    font-size: 7em;
     color: #FFFFFF;
     margin-bottom: 80px;
 }

@@ -1,6 +1,6 @@
 .profile-nav{
     position: sticky;
-    top: 5px;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@ input[name="ProfileExit"]{
     color: white;
     background-color: #DB2A2A;
     position: inherit;
-    left: 0;
+    left: 50px;
 }
 
 input[name="ProfileExit"]:hover{
