@@ -26,6 +26,14 @@ header {
     font-size: 1.2em;
 }
 
+header a:hover,
+button[name="onasButton"]:hover{
+    border: 1px #FFFFFF solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
 .index-container {
     display: flex;
     align-items: center;
@@ -84,9 +92,8 @@ button {
     font-family: inherit;
     font-size: 1.2em;
     cursor: pointer;
-    color: #000000;
+    color: #333;
     margin-right: 105px;
-
 }
 
 .button-to-reg div {
@@ -98,6 +105,11 @@ button {
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+}
+
+.button-to-reg div:hover{
+    background-color: #62b126;
+    
 }
 
 .kruzjok-container {

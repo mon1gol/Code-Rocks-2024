@@ -54,9 +54,6 @@ th {
     font-weight: bold;
 }
 
-tbody tr:last-child td {
-}
-
 button[name="delete"]{
     all: unset;
 }

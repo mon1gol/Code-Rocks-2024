@@ -82,3 +82,34 @@ input[name="PriceRange"]{
     position: inherit;
     color: white;
 }
+
+table {
+    border-collapse: collapse;
+    width: 1400px;
+}
+
+th,
+td {
+    border: 2px solid #90FF39;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+button[name="select-delivery"]{
+    all: unset;
+    cursor: pointer;
+    background-color: #90FF39;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.button-align{
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+}

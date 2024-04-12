@@ -31,3 +31,8 @@ body {
     letter-spacing: 2px;
     margin-bottom: 30px;
 }
+
+.purchase-title label{
+    position: relative;
+    top: 15px;
+}
